@@ -1,0 +1,71 @@
+body {
+  font-family: Arial;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+.person {
+    padding-top: 12px;
+  text-align: center;
+  width: 220px;
+  height: 287px;
+  .photo {
+    position: relative;
+    & img {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transition: border-radius 1s;
+    }
+    & span.rank {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 86px;
+      right: 15px;
+      border-radius: 50%;
+      background-color: white;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+      color: #8b0000;
+    }
+  }
+
+  &:hover {
+    background-color: #eee;
+    border-radius: 10px;
+    & .extra {
+      display: block;
+    }
+    & img {
+        border-radius: 60px;
+    }
+  }
+}
+}
+
+.details {
+  & a {
+    padding: 8px 0 40px 0;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2f4f4f;
+  }
+}
+
+.extra {
+  font-size: 21.6px;
+  line-height: 25px;
+  color: #000000;
+  padding: 10px 0 19px 0;
+  display: none;
+}
+
+@import "media-fils";
+
